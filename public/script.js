@@ -9,11 +9,11 @@ async function getPotion(){
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            label: req.body.label,
-            effect: req.body.effect,
-            ingredients: req.body.ingredients,
-            color: req.body.color,
-            isExplosive: req.body.isExplosive 
+            label: req.params.label,
+            effect: req.params.effect,
+            ingredients: req.params.ingredients,
+            color: req.params.color,
+            isExplosive: req.params.isExplosive 
         }).save()
     
     })
